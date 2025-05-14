@@ -36,7 +36,6 @@ CREATE TABLE OrderItems2NF (
     FOREIGN KEY (OrderID) REFERENCES Orders2NF(OrderID)
 );
 
--- Now, let's populate these tables with data from the OrderDetails table:
 
 -- Insert data into the Orders2NF table
 INSERT INTO Orders2NF (OrderID, CustomerName)
